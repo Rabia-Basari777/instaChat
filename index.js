@@ -27,7 +27,7 @@ io.on('connection', socket => {
     })
 
     socket.on("disconnect", (message) => {
-        socket.broadcast.emit("left", users[socket.id]);
+        socket.broadcast.emit("left", users[socket.id]);      //shows the message if a user leaves the chat to all other users
         delete users[socket.id];
     })
 })
