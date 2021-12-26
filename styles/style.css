@@ -1,0 +1,96 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(white, peachpuff);
+}
+h1 {
+    text-align: center;
+    color: rgb(25, 111, 216);
+}
+.logoDiv {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: block;
+    margin-left: 18%;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50px;
+}
+.more {
+    height: 30px;
+    width: 35px;
+    margin-right: 17%;
+    margin-top: 15px;
+}
+.container {
+    max-width: 60%;
+    height: 60vh;
+    margin: auto;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    border: 2px solid rgb(82, 214, 146);
+    background-color: rgb(140,234,185);
+}
+.message {
+    background-color:  rgb(209, 197, 197);
+    width: 24%;
+    padding: 10px;
+    margin: 17px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.left {
+    float: left;
+    clear: both;
+}
+.right {
+    float: right;
+    clear: both;
+}
+#sendForm {
+    display: block;
+    margin-left: 17.5%;
+    text-align: center;
+    max-width: 80%;
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+}
+.inputDiv {
+    width: 76.5%;
+    height: 40px;
+    display: flex;
+    border-radius: 20px;
+    background-color: rgb(252, 250, 250);
+}
+.smiley {
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.attach {
+    height: 25px;
+    margin: 10px;
+}
+#messageInput {
+    width: 90%;
+    height: 34px;
+    border-radius: 5px;
+    border: none;
+}
+#messageInput:focus {
+    outline: none;
+}
+.sendBtn {
+    border: none;
+    background-color: peachpuff;
+}
+.sendBtn > img {
+    cursor: pointer;
+    height: 34px;
+    margin-left: 10px;
+}
