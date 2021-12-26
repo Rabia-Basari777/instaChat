@@ -1,6 +1,17 @@
-// Handling socket.io connections
 
-const io = require('socket.io')(8000);
+const express = require("express");
+const app = express();
+const server = require("http").createServer(app);
+const port = process.env.PORT || 8000;
+
+// Handling socket.io connections
+const io = require("socket.io")(server);
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname+'/index.html')
+})
+
+app.use(express.static(__dirname + '/'));
 
 const users = {};
 
@@ -19,4 +30,8 @@ io.on('connection', socket => {
         socket.broadcast.emit("left", users[socket.id]);
         delete users[socket.id];
     })
+})
+
+server.listen(port, () => {
+    console.log("Server started at 8000");
 })
