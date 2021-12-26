@@ -17,4 +17,11 @@ A chat application where multiple users can chat. Built individually in a span o
   6. To make the User Eperience better, a notification sound has been included when a message is received.
   
 ## A Glimpse
-![alt text](scs1.PNG)
+
+![alt text](/images/scs1.PNG)
+
+![alt tet](/images/scs2.PNG)
+
+![alt tet](/images/scs3.PNG)
+
+![alt tet](/images/scs4.PNG)
